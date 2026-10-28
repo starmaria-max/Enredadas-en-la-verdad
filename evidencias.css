@@ -1,0 +1,220 @@
+button{
+    padding: 20px 20px;
+    margin: 5px;
+    position: relative;
+    background: rgba(0,0,0,0.65);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    }
+.botones {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+.botones button {
+    position: static;
+    margin: 0;
+}
+#fotos{
+    position: relative;
+    left: 10px;
+    top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#problema{
+    position: relative;
+    left: 500px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#necesidades{
+    position: relative;
+    left: 500px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#solucion{
+    position: relative;
+    left: 500px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#audio{
+    position: relative;
+    top: 250px;
+}
+/* DISEÑO IGUAL AL INICIO */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #50516d;
+    background: #f8f4ff;
+}
+
+/* ENCABEZADO Y MENÚ */
+.encabezado {
+    padding: 15px 5%;
+    background: linear-gradient(110deg, #d180b6, #490d5d);
+}
+
+.menu {
+    max-width: 1150px;
+    margin: auto;
+}
+
+.menu > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    position: relative;
+    list-style: none;
+}
+
+.menu a {
+    display: block;
+    padding: 13px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: rgb(252, 250, 250);
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.menu > ul > li > a:hover,
+.menu > ul > li > a.activo {
+    background: white;
+    color: #bd6b9f;
+    box-shadow: 0 5px 10px #70456c30;
+}
+
+/* MENÚ DESPLEGABLE */
+.menu li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    padding: 8px;
+    margin: 0;
+    background: rgb(253, 253, 253);
+    border-radius: 18px;
+    box-shadow: 0 10px 25px #4e38652b;
+    z-index: 20;
+}
+
+.menu li:hover > ul {
+    display: block;
+}
+
+.menu li ul a {
+    padding: 12px 15px;
+    color: #665476;
+    border-radius: 12px;
+}
+
+.menu li ul a:hover {
+    background: #fbe3f0;
+    color: #ad5f93;
+}
+
+/* FONDO SUAVE COMO INICIO */
+main {
+    min-height: 85vh;
+    padding: 35px 20px 70px;
+    background:
+        radial-gradient(ellipse at 10% 10%, #d5f7f6 0%, transparent 38%),
+        radial-gradient(ellipse at 90% 35%, #f9dcec 0%, transparent 40%),
+        linear-gradient(135deg, #f3f8ff, #fff5fa);
+}
+
+/* TÍTULO */
+h1 {
+    color: #555677;
+    font-family: Georgia, serif;
+}
+
+h2, h3 {
+    color: #614b59;
+}
+
+/* BOTONES DE EVIDENCIAS */
+button,
+.boton-evidencia,
+.botones-evidencia a {
+    display: inline-block;
+    padding: 14px 20px;
+    margin: 6px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(120deg, #d180b6, #b78bce);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 8px 20px #c47cac30;
+    transition: 0.3s ease;
+}
+
+button:hover,
+.boton-evidencia:hover,
+.botones-evidencia a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px #c47cac45;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    padding: 22px;
+    text-align: center;
+    background: #eee2f2;
+    color: #6b6079;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .menu > ul {
+        flex-wrap: wrap;
+        gap: 3px;
+    }
+
+    .menu > ul > li > a {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    main {
+        padding: 25px 12px 50px;
+    }
+}
+.encabezado {
+    padding: 18px 5%;
+    background: linear-gradient(110deg, #d180b6, #bd8cce);
+}

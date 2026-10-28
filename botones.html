@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotras - Enredados en la Verdad</title>
+
+    <link rel="stylesheet" href="index.html.html">
+    <link rel="stylesheet" href="botones.css">
+</head>
+<body>
+
+<header class="encabezado">
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html.html">Inicio</a></li>
+            <li class="submenu">
+                <a href="botones.html" class="activo">Nosotras⌄</a>
+                <ul>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="evidencias.html">Evidencias</a></li>
+                </ul>
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="contenedor">
+    <h1>Enredados en la Verdad</h1>
+    <h2>Nosotras</h2>
+
+    <section class="contenido">
+
+        <div class="panel">
+            <h3 id="titulo">Nuestra visión</h3>
+            <p id="texto">
+                Buscamos fomentar el pensamiento crítico y el uso responsable
+                de las redes sociales.
+            </p>
+
+            <img id="imagen" src="vision.png.jpeg" alt="Imagen de nuestra visión">
+        </div>
+
+           <div class="panel">
+            <h3 id="titulo">Nuestra mision</h3>
+            <p id="texto">
+                Promovemos el análisis y la verificación de noticias para prevenir la desinformación en las redes sociales.
+            </p>
+
+            <img id="imagen" src="mision.png.jpeg" alt="Imagen de nuestra mision">
+        </div>
+         <div class="panel">
+            <h3 id="titulo">Nuestra pregunta probema</h3>
+            <p id="texto">
+                ¿Cómo afecta la desinformación en las redes sociales a los estudiantes y qué estrategias pueden ayudarles a identificar y verificar la información falsa?
+            </p>
+
+            <img id="imagen" src="pregunta problema.png.jpeg" alt="Imagen de nuestra visión">
+        </div>
+         <div class="panel">
+            <h3 id="titulo">Nuestros Objetivos generales</h3>
+            <p id="texto">
+                Analizar el impacto de la desinformación en los estudiantes y promover estrategias para reconocer y verificar información en las redes sociales.
+            </p>
+
+            <img id="imagen" src="general-nueva.png" alt="Imagen de nuestra visión">
+        </div>
+        <div class="panel">
+        <h3 id="titulo">Nuestros Objetivos principales</h3>
+            <p id="texto">
+               Identificar hábitos de consumo de información, reconocer riesgos de la desinformación y fomentar la verificación de fuentes antes de compartir noticias.
+            </p>
+
+            <img id="imagen" src="objetivos principales.png.jpeg" alt="Imagen de nuestra visión">
+        </div>
+        
+<div class="panel">
+            <h3 id="titulo">Nuestro Cronograma</h3>
+            <p id="texto">
+                Aquí puedes consultar las actividades realizadas y las fechas de desarrollo del proyecto.
+
+            <img id="imagen" src="cronograma.png" alt="Imagen de nuestra visión">
+        </div>
+    </section>
+</main>
+
+<script>
+const secciones = {
+    vision: {
+        titulo: "Visión",
+        texto: "Buscamos que los estudiantes aprendan a identificar la desinformación y a utilizar las redes sociales de manera responsable.",
+        
+    },
+
+    mision: {
+        titulo: "Misión",
+        texto: "Promovemos el análisis y la verificación de noticias para prevenir la desinformación en las redes sociales.",
+        imagen: "mision.jpg"
+    },
+
+    pregunta: {
+        titulo: "Pregunta de investigación",
+        texto: "¿Cómo afecta la desinformación en las redes sociales a los estudiantes y qué estrategias pueden ayudarles a identificar y verificar la información falsa?",
+        imagen: "pregunta.jpg"
+    },
+
+    generales: {
+        titulo: "Objetivos generales",
+        texto: "Analizar el impacto de la desinformación en los estudiantes y promover estrategias para reconocer y verificar información en las redes sociales.",
+        imagen: "objetivos_generales.jpg"
+    },
+
+    especificos: {
+        titulo: "Objetivos específicos",
+        texto: "Identificar hábitos de consumo de información, reconocer riesgos de la desinformación y fomentar la verificación de fuentes antes de compartir noticias.",
+        imagen: "objetivos_especificos.jpg"
+    },
+
+    cronograma: {
+        titulo: "Cronograma",
+        texto: "Aquí puedes consultar las actividades realizadas y las fechas de desarrollo del proyecto.",
+        imagen: "cronograma.jpg"
+    }
+};
+
+function mostrar(seccion) {
+    document.getElementById("titulo").textContent =
+        secciones[seccion].titulo;
+
+    document.getElementById("texto").textContent =
+        secciones[seccion].texto;
+
+    document.getElementById("imagen").src =
+        secciones[seccion].imagen;
+
+    document.getElementById("imagen").alt =
+        secciones[seccion].titulo;
+}
+</script>
+
+</body>
+</html>

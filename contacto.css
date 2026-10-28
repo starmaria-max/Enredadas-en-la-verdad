@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8f1ff;
+  color: #443354;
+}
+
+/* Mantener el menú original de menu.css */
+.encabezado {
+  padding: 9px 5%;
+  background: linear-gradient(110deg, #d180b6, #bd8cce);
+}
+
+.menu {
+  max-width: 1150px;
+  margin: auto;
+}
+
+.menu > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  list-style: none;
+}
+
+.menu li {
+  position: relative;
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 13px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.menu > ul > li > a:hover,
+.menu > ul > li > a.activo {
+  background: white;
+  color: #bd6b9f;
+  box-shadow: 0 5px 15px #70456c30;
+}
+
+.menu li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  padding: 8px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px #4e38652b;
+  z-index: 20;
+}
+
+.menu li:hover > ul {
+  display: block;
+}
+
+.menu li ul a {
+  padding: 12px 15px;
+  color: #665476;
+  border-radius: 12px;
+}
+
+.menu li ul a:hover {
+  background: #fbe3f0;
+  color: #ad5f93;
+}
+
+.contenedor {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.tarjetas {
+  display: grid;
+  gap: 20px;
+}
+
+.persona {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+  padding: 20px;
+  background: white;
+  border-radius: 20px;
+  flex-wrap: wrap;
+}
+
+.persona img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 18px;
+}
+
+.persona a {
+  color: #8054b8;
+}
+
+@media (max-width: 500px) {
+  .persona {
+    justify-content: center;
+    text-align: center;
+  }
+}

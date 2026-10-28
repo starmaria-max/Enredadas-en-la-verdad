@@ -1,0 +1,141 @@
+/* ===== HISTORIA - ENREDADOS EN LA VERDAD ===== */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f4ff;
+    color: #50516d;
+}
+
+/* Contenedor general */
+.historia-contenedor {
+    width: 92%;
+    max-width: 1050px;
+    margin: 40px auto;
+    padding-bottom: 40px;
+}
+
+/* Portada */
+.historia-portada {
+    text-align: center;
+    padding: 35px 20px;
+    background: linear-gradient(135deg, #dff5fa, #f4e4fa, #fbe7f3);
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+
+.etiqueta {
+    color: #956bb5;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.historia-portada h1 {
+    color: #8061a8;
+    font-size: 38px;
+    margin: 15px 0;
+}
+
+.subtitulo {
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+/* Tarjeta principal */
+.historia-tarjeta {
+    background: #ffffff;
+    border: 2px solid #e7d8f5;
+    border-top: 7px solid #d18abd;
+    border-radius: 24px;
+    padding: 35px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 18px rgba(112, 85, 145, 0.12);
+}
+
+.historia-icono {
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5e8fb;
+    border-radius: 50%;
+    font-size: 27px;
+}
+
+.historia-tarjeta h2,
+.historia-final h2 {
+    color: #8061a8;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.historia-tarjeta p,
+.historia-final p {
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* Tarjeta final */
+.historia-final {
+    background: linear-gradient(135deg, #f3e8fb, #e5f5fa);
+    border-radius: 24px;
+    padding: 30px;
+    text-align: center;
+}
+
+.historia-final p {
+    max-width: 750px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.historia-final span {
+    display: inline-block;
+    color: #a65e9b;
+    font-weight: bold;
+    line-height: 1.7;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 600px) {
+    .historia-contenedor {
+        width: 92%;
+        margin: 25px auto;
+    }
+
+    .historia-portada {
+        padding: 25px 18px;
+    }
+
+    .historia-portada h1 {
+        font-size: 30px;
+    }
+
+    .subtitulo {
+        font-size: 15px;
+    }
+
+    .historia-tarjeta {
+        padding: 24px 20px;
+    }
+
+    .historia-tarjeta h2,
+    .historia-final h2 {
+        font-size: 22px;
+    }
+
+    .historia-tarjeta p,
+    .historia-final p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+}
